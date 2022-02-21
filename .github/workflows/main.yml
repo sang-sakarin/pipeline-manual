@@ -1,4 +1,4 @@
-name: Manually triggered workflow
+name: Manually triggered workflow 1
 on:
   workflow_dispatch:
     inputs:
@@ -21,4 +21,4 @@ jobs:
     if: ${{ github.event.inputs.job == 'prod-deploy'}}
     steps:
     - name: ${{ github.event.inputs.job }} - step 1
-      run: echo "${{ github.event.inputs.jo
+      run: echo "${{ github.event.inputs.job }} triggered!"
